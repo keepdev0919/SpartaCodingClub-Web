@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        function hey(){
+            $.ajax({
+                type: "GET",
+                url: "/test?title_give=봄날은간다",
+                data: {},
+                success: function(response){
+                console.log(response)
+                }
+                })
+        }
+    </script>
+</head>
+<body>
+    <button onclick="hey()">나는 버튼!</button>
+</body>
+</html>
